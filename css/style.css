@@ -1,0 +1,82 @@
+/*SISTEMA DE GRID*/
+.teams-nav {
+    display: grid;
+    background-color: blueviolet;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} 
+
+.teams-nav > ul {
+    display:  contents;
+}
+
+.teams-nav > ul > li {
+    padding: 20px;
+    margin: 20px;
+}
+
+.associations-nav {
+    display: grid;
+    background-color: green     ;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} 
+
+.associations-nav > ul {
+    display:  contents;
+}
+
+.associations-nav > ul > li {
+    padding: 20px;
+    margin: 20px;
+}
+
+.nav {
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} 
+
+.nav > ul {
+    display:  contents;
+}
+
+.nav > ul > li > .enterprise-item {
+    padding: 20px;
+    margin: 20px;
+}
+
+.nav > ul > li > .nav-logo {
+    padding: 20px;
+    margin: 20px;
+    background-color: black;
+}
+
+.logos-section {
+  display: grid;
+  grid-template-columns: 1fr;        /* solo una columna */
+  grid-template-rows: auto auto auto; /* tres filas automáticas */
+  gap: 10px;
+  background-color: yellow;
+}
+
+.logos-section > ul {
+  display: contents; /* deja que los <li> sean grid items directos */
+}
+
+.logo-item-item-a {
+  background-color: navy;
+  color: white;
+  grid-row: 1;
+}
+
+.logo-item-item-b {
+  background-color: green;
+  color: white;
+  grid-row: 2;
+}
+
+.logo-item-item-c {
+  background-color: beige;
+  grid-row: 3;
+}
+
+
